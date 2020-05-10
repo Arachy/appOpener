@@ -47,8 +47,11 @@ def addApp():
 
 
 def runApp():
-    for app in apps:
-        os.startfile(app)
+    if apps:
+        for app in apps:
+            os.startfile(app)
+    else:
+        messagebox.showinfo("", "There are no apps to run!")
 
 
 def clear():
@@ -116,7 +119,7 @@ profileMenu = tk.Menu(menu, tearoff=0)
 profileMenu.add_separator()
 profileMenu.add_command(label="Add New Profile", command=addProfile)
 
-menu.add_cascade(label="Profiles", menu=profileMenu)
+# menu.add_cascade(label="Profiles", menu=profileMenu)
 menu.add_command(label="About", command=about)
 menu.add_command(label="Help", command=myhelp)
 menu.add_command(label="Exit", command=root.quit)

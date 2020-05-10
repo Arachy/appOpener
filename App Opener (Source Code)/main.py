@@ -1,6 +1,6 @@
 """
 AppOpener Project to open apps (duh)
-Version 1.0
+v0.1.0
 By Aidan Shanley
 """
 
@@ -70,7 +70,7 @@ def openSingleApp(index):
 
 
 def about():
-    messagebox.showinfo("About", "App Opener v1.0\nBy Aidan Shanley :)")
+    messagebox.showinfo("About", "App Opener v0.1.0\nBy Aidan Shanley :)")
 
 
 def myhelp():

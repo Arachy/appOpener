@@ -10,4 +10,4 @@ Useful for quickly opening multiple apps at once.
 &nbsp;&nbsp;&nbsp;&nbsp;as it creates other files that are needed to load saved apps.
 ## To Do List
 A list of ideas I want to implement to the app, I will add and remove things from this list over time.
-* Allow only one profile of the same name i.e. No name duplications
+* Feel free to suggest features

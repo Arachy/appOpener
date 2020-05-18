@@ -96,7 +96,6 @@ def addProfile():
 
 def createProfile():
     profile_name = profileName[-1].get()  # the text in the entry field for adding new profile
-    print(profile_name)
     tempProfile = Profile(profile_name, len(profiles))  # creates a Profile object
     profiles.append(tempProfile)  # appends the Profile object to the profiles list
     top.destroy()
@@ -119,7 +118,7 @@ profileMenu = tk.Menu(menu, tearoff=0)
 profileMenu.add_separator()
 profileMenu.add_command(label="Add New Profile", command=addProfile)
 
-# menu.add_cascade(label="Profiles", menu=profileMenu)
+menu.add_cascade(label="Profiles", menu=profileMenu)
 menu.add_command(label="About", command=about)
 menu.add_command(label="Help", command=myhelp)
 menu.add_command(label="Exit", command=root.quit)

@@ -1,5 +1,5 @@
 # App Opener
-A simple app that opens other apps :P\
+A simple app that opens other apps\
 Written in Python.\
 Useful for quickly opening multiple apps at once.
 ## Latest Version

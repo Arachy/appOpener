@@ -1,5 +1,5 @@
 """
-AppOpener Project to open apps (duh)
+AppOpener Project to open apps
 Version 0.2.0
 By Aidan Shanley
 """
@@ -16,7 +16,7 @@ profiles = []
 profileName = []
 defaultProfile = None
 
-# Functions
+# Functions/Classes
 
 
 class Profile:
@@ -273,6 +273,7 @@ clearApps.place(relx=0.6, rely=0.915)
 # Runs app
 root.mainloop()
 
+# Writes all Profiles to an external file to persist even after exiting the app
 if profiles:
     with open("profiles.txt", "w", newline="") as file:
         write = csv.writer(file)
@@ -280,6 +281,7 @@ if profiles:
             templist = [profile.name, profile.num, profile.apps]
             write.writerow(templist)
 
+# Writes all Profiles to an external file after creating it, normally only on first use
 if apps and not profiles:
     with open("profiles.txt", "w", newline="") as file:
         write = csv.writer(file)
